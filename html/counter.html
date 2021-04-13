@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Counter</title>
+</head>
+
+<body>
+    <script>
+        function plus() {
+          document.getElementById("num").value++;
+        }
+        function minus() {
+          document.getElementById("num").value--;
+        }
+    </script>
+    <input placeholder="0" id="num" type="number" disabled="disabled">
+    <button id="plus" onclick="plus()" type="text">Plus</button>
+    <button id="minus" onclick="minus()" type="text">Minus</button>
+</body>
+
+<style>
+    button {text-align: center; height: 25px; width: 60px;}
+    input {text-align: center; height: 18px; width: 120px;}
+</style>
+
+</html>
