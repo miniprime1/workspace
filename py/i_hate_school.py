@@ -1,0 +1,1 @@
+while True: print("I hate school!")

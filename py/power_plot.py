@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.arange(0, 1, 0.01)
+sq = np.power(x, 2/1)
+cb = np.power(x, 3/1)
+sqrt = np.power(x, 1/2)
+cbrt = np.power(x, 1/3)
+plt.plot(x, cb, 'b', label='power(x, 3/1)')
+plt.plot(x, sq, 'r', label='power(x, 2/1)')
+plt.plot(x, x, 'y', label='power(x, 1/1)')
+plt.plot(x, sqrt, 'm', label='power(x, 1/2)')
+plt.plot(x, cbrt, 'g', label='power(x, 1/3)')
+plt.axis([0, 1, 0, 1])
+plt.legend(loc = "upper right")
+plt.title("Plot of Power")
+plt.show()

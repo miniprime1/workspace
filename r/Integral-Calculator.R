@@ -1,0 +1,8 @@
+print("Integral Calculator v1.0")
+expr = readline(prompt="Enter function: ")
+l = strtoi(readline(prompt="Enter lower bound: "))
+u = strtoi(readline(prompt="Enter upper bound: "))
+eval(parse(text=paste("f = function(x) {", expr, "}", sep="")))
+S = integrate(f, l, u)
+print(paste("f(x) = ", expr, sep=""))
+print(paste("F(x)|(", l, ",", u, ") = ", S[1], sep=""))

@@ -1,0 +1,6 @@
+print("Derivative Calculator v1.0")
+expr = readline(prompt="Enter function: ")
+f = parse(text=expr)
+Df = D(f, "x")
+print(paste("f(x) = ", expr))
+print(paste("f'(x) = ", deparse(Df)))

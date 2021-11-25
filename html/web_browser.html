@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Web Browser</title>
+</head>
+
+<body>
+  <script>
+    function redirect() {
+      var url = document.getElementById("input").value;
+      document.getElementById("web").src = url;
+    }
+  </script>
+  <input placeholder="URL" type="text" id="input" name="url">
+  <button onclick="redirect()" type="text">Go</button>
+  <br/><br/>
+  <iframe id="web" src=""></iframe>
+</body>
+
+<style>
+  iframe {height: 500px; width: 750px}
+  button {height: 25px; width: 50px}
+  input {height: 19px; width: 692px}
+</style>
+
+</html>
